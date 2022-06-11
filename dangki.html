@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+<body>
+    <div id="main">
+        <div class="taskbar">
+            <div class="top">
+                <a href="index.html" ><img src="./assets/img/logo.jpg"></a>
+                <form action="#">
+                    <input type="text" placeholder="Nhập tên giày cần tìm">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+                <ul>
+                    <!-- <li><a href="#">Giày yêu thích</a></li> -->
+                    <li><a href="./dangnhap.html">Đăng nhập</a></li>
+                    <span>&nbsp &nbsp &nbsp &nbsp  | &nbsp &nbsp</span>
+                    <li><a href="./dangki.html">Đăng ký</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><a href="index.html" class="list">Trang chủ</a></li>
+                    <li><a href="giaynam.html" class="list">Giày nam</a></li>
+                    <li><a href="giaynu.html" class="list">Giày nữ</a></li>
+                    <li><a href="hangsapve.html"  class="list">Hàng sắp về</a></li>
+                    <li class="dropdown"><a href="" class="list">Thêm</a>
+                        <div class="droplist-container">
+                            <div class="droplist-box">
+                                <a href="tintuc.html">Tin tức</a>
+                                <a href="kinhnghiem.html">Kinh nghiệm</a>
+                                <a href="lienhe.html">Liên hệ</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <div class="bg" style="background-image: url(./assets/img/DNDK.jpg);">
+        <div class="main1">
+
+          <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Đăng ký</h3>
+            <p class="desc">QHN-Shop ❤️</p>
+    
+            <div class="spacer"></div>
+    
+            <div class="form-group">
+              <label for="fullname" class="form-label">Tên đầy đủ</label>
+              <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Đậu Hoàng Nam" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" rules="required|email" type="text" placeholder="VD: abc@gmail.com" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <div class="form-group">
+              <label for="password" class="form-label">Mật khẩu</label>
+              <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <div class="form-group">
+              <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+              <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <button class="form-submit">Đăng ký</button>
+            <p class="qs">Bạn đã có tài khoản?
+            <a class="login-p" href="./dangnhap.html">Đăng nhập</a></p>
+          </form>
+      </div>
+    </div>
+        <div id="footer">
+            <div class="inner clearfix">
+                <div class="about-us">
+                  <h3>ĐỊA CHỈ CỬA HÀNG</h3>
+                  <p>Tầng 3, TTTM Mỹ Đình Plaza 2<br>
+                    Số 2 Nguyễn Hoàng, Nam Từ Liêm, Hà Nội<br>
+                    Hotline: 0977179889</p>
+                </div>
+          
+                <div class="info-link">
+                  <h3>Quick Links</h3>
+                  <nav>
+                    <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./GiayNamNangDong.html">Men</a></li>
+                      <li><a href="./GiayNuThanhLich.html">Women</a></li>
+                    </ul>
+                  </nav>
+                </div>
+          
+                <div class="follow-us">
+                  <h3>Follow Us</h3>
+                  <ul>
+                    <li class="facebook"><a href="" style="background-image: url(./assets/img/fb.jpg); "></a></li>
+                    <li class="google-plus"><a href="" style="background-image: url(./assets/img/gg.jpg);"></a></li>
+                    <li class="twitter"><a href="" style="background-image: url(./assets/img/tt.jpg);"></a></li>
+                    <li class="youtube"><a href="" style="background-image: url(./assets/img/yt1.jpg);"></a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <p class="copyright">QHN - Shop</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/home.js"></script>
+    <script>
+      var form = new Validator('#form-1');
+      form.onSubmit = function (formData){
+        console.log(formData);
+      }
+      
+    </script>
+</body>
+</html>
